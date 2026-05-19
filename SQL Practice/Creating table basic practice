@@ -1,0 +1,37 @@
+-- create table command creates table
+Create table employee(
+-- then write column name with datatypes
+-- separate column using comma (,)
+f_name varchar(20),
+mid_name varchar (20),
+l_name varchar(20),
+age int,
+salary int,
+location varchar (20)
+)
+-- Then Insert values according to the sequence and datatype of column
+-- insert into is used to add values
+-- you can add bulk of values at once e.g, (values), (values), (values)
+insert into employee values('M', 'Ahmad', null, 20, 40000, 'Guj'), ('M', 'Ahsan', 'Riaz', 29, 400000, 'Guj')
+-- select *from is used to show whole table 
+select *from employee
+-- drop table is used to drop table 
+drop table employee
+-- create table 
+Create table employee(
+-- add columns with datatype
+f_name varchar(25) not null, -- you can decide if you want to keep value null or not null
+l_name varchar(30) not null,
+age int not null,
+salary int not null,
+-- if you want to make a column defauly write column name its type default command then word to want to make default
+location varchar(34) default 'fsd' not null
+)
+--insert values
+insert into employee(f_name, l_name, age, salary) values('M', 'Ahmad', 20, 500000000), ('M', 'Ahsan', 12, 500000000), 
+('M', 'umer', 20, 5000), ('M', 'ashraf', 20, 30000)
+insert into employee(f_name, l_name, age, salary, location) values('Muhammad', 'Qamar', 35, 345678, 'Guj')
+--show table
+select *from employee
+--drop table
+drop table employee
